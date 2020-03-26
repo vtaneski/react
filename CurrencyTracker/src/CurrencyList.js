@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CurrencyItem from "./CurrencyItem";
 import { observer } from 'mobx-react';
 import './CurrencyList.css';
+import Button from 'react-bootstrap/Button';
 
 class CurrencyList extends Component {
 
@@ -23,7 +24,7 @@ class CurrencyList extends Component {
         return (
             <div>
                 <div className="refresh">
-                    <button onClick={this.onRefresh}>Refresh</button>
+                    <Button variant="secondary" onClick={this.onRefresh}>Refresh</Button>
                 </div>
                 <table>
                     <tbody>

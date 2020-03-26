@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { observer } from 'mobx-react';
+import DropdownButton from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Button';
 
 class Settings extends Component {
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { observer } from 'mobx-react';
+import Button from 'react-bootstrap/Button';
 
 class CurrencyItem extends Component {
 
@@ -27,7 +28,7 @@ class CurrencyItem extends Component {
                             pathname: '/currencyinfo/' + item.id
                         }}
                     >
-                        <button onClick={this.onClick}>Details</button>
+                        <Button variant="info" onClick={this.onClick}>Details</Button>
                     </Link></td>
             </tr >
         )

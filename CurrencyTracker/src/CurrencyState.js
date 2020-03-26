@@ -28,10 +28,7 @@ class CurrencyState {
         console.log("Retrieving data");
         fetch(proxyUrl + targetUrl, requestOptions)
             .then(results => results.json())
-            .then(newData => {
-                console.log(newData.data);
-                this.list = newData.data
-            });
+            .then(newData => this.list = newData.data);
     }
 
     fetchCurrencyData(id) {
