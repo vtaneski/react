@@ -19,8 +19,8 @@ class App extends Component {
             <h1>Currency Tracker</h1>
           </header>
 
-          <div>
-            <Link to="/"><Button variant="primary">Home</Button></Link>
+          <div className="buttons">
+            <Link to="/"><Button variant="primary">Home</Button></Link> {' '}
             <Link to="/settings"><Button variant="primary">Settings</Button></Link>
           </div>
 

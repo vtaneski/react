@@ -31,6 +31,7 @@ class CurrencyState {
             .then(newData => this.list = newData.data);
     }
 
+    /* TO DO - change url */
     fetchCurrencyData(id) {
         // retreiving data for selected currency
         const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
